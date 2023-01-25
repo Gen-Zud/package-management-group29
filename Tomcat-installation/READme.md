@@ -29,7 +29,7 @@ sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.5/bin/apache-tomcat-10
 sudo tar -xvf apache-tomcat-10.1.5.tar.gz
 sudo rm -rf apache-tomcat-10.1.5.tar.gz
 sudo mv apache-tomcat-10.1.5 tomcat10
-sudo chmod 777 -R /opt/tomcat9
+sudo chmod 777 -R /opt/tomcat10
 sudo chown ec2-user -R /opt/tomcat10
 sh /opt/tomcat9/bin/startup.sh
 # create a soft link to start and stop tomcat
