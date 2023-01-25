@@ -23,18 +23,18 @@ sudo yum install java-1.8.0-openjdk-devel -y
 # Download tomcat software and extract it.
 sudo yum install wget unzip -y
 ```
-### Install Tomcat version 10.1.5
+### Install Tomcat version 11.0.0
 ``` sh
-sudo wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.1.5/bin/apache-tomcat-10.1.5-deployer.tar.gz
-sudo tar -xvf apache-tomcat-10.1.5.tar.gz
-sudo rm -rf apache-tomcat-10.1.5.tar.gz
-sudo mv apache-tomcat-10.1.5 tomcat10
-sudo chmod 777 -R /opt/tomcat10
-sudo chown ec2-user -R /opt/tomcat10
-sh /opt/tomcat9/bin/startup.sh
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-11/v11.0.0-M1/bin/apache-tomcat-11.0.0-M1-deployer.tar.gz
+sudo tar -xvf apache-tomcat-11.0.0.tar.gz
+sudo rm -rf apache-tomcat-11.0.0.tar.gz
+sudo mv apache-tomcat-11.0.0 tomcat11
+sudo chmod 777 -R /opt/tomcat11
+sudo chown ec2-user -R /opt/tomcat11
+sh /opt/tomcat11/bin/startup.sh
 # create a soft link to start and stop tomcat
-sudo ln -s /opt/tomcat10/bin/startup.sh /usr/bin/starttomcat
-sudo ln -s /opt/tomcat10/bin/shutdown.sh /usr/bin/stoptomcat
+sudo ln -s /opt/tomcat11/bin/startup.sh /usr/bin/starttomcat
+sudo ln -s /opt/tomcat11/bin/shutdown.sh /usr/bin/stoptomcat
 starttomcat
 sudo su - ec2-user
 ```
